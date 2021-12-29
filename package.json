@@ -11,7 +11,8 @@
   "author": "Santiago Riveira",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^8.5.0"
+    "cypress": "^8.5.0",
+    "cypress-iframe": "^1.0.1"
   },
   "dependencies": {
     "node-fetch": "^3.0.0"

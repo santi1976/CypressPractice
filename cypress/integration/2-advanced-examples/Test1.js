@@ -32,10 +32,8 @@ describe('Visit webpage', function(){
             cy.log(logoEl.text())
 
         })
-       
         
-        
-    
+
 
     })
 })
