@@ -4,7 +4,7 @@ describe('My fourth test suite', function(){
 
     it('My First Test Case', () => {
         
-        cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
+        cy.visit(Cypress.env('url2'))
         cy.get('#alertbtn').click()
         cy.get('[value=Confirm]').click()
         

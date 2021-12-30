@@ -6,7 +6,7 @@ describe('My fifth test suite', function(){
 
     it('My First Test Case', () => {
         
-        cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
+        cy.visit(Cypress.env('url2'))
 
              cy.get('tr td:nth-child(2)').each(($el,index,$list)=>{
             const text = $el.text();

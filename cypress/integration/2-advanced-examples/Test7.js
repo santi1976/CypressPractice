@@ -5,7 +5,7 @@ import 'cypress-iframe'
 describe('My Seventh Test Suite', function(){
  
    it('Frame Test', () => {
-       cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+       cy.visit(Cypress.env('url2'))   
 
        //dealing with iframes
        cy.frameLoaded('#courses-iframe')

@@ -17,7 +17,7 @@ describe('My 8th Test Suite', function(){
     const homePage = new HomePage()
     const products = new Products()
     const checkOut = new CheckOut()
-        cy.visit('https://rahulshettyacademy.com/angularpractice/')
+        cy.visit(Cypress.env('url3'))
 
         homePage.getEditBox().type(this.data.name) // we type that selector with 'input name' since in Angular classes tend to be dynamic and changes constantly
         homePage.getGender().select(this.data.gender)

@@ -1,4 +1,10 @@
 {"viewportWidth": 1280,
  "viewportHeight": 900, 
- "defaultCommandTimeout":6000
+ "defaultCommandTimeout":6000, 
+ "env":{
+     
+     "url1": "https://rahulshettyacademy.com/seleniumPractise/#/",
+     "url2": "https://www.rahulshettyacademy.com/AutomationPractice/",
+     "url3": "https://rahulshettyacademy.com/angularpractice/"
+ }
 }

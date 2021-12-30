@@ -2,7 +2,8 @@
 
 describe('Visit webpage', function(){
     it('check url', function(){
-        cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
+        cy.visit(Cypress.env('url1'))
+        
 
     })
 
