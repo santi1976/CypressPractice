@@ -1,10 +1,13 @@
-{"viewportWidth": 1280,
- "viewportHeight": 900, 
- "defaultCommandTimeout":6000, 
- "env":{
-     
-     "url1": "https://rahulshettyacademy.com/seleniumPractise/#/",
-     "url2": "https://www.rahulshettyacademy.com/AutomationPractice/",
-     "url3": "https://rahulshettyacademy.com/angularpractice/"
- }
+{
+  "viewportWidth": 1280,
+  "viewportHeight": 900,
+  "defaultCommandTimeout": 6000,
+  "screenshotsFolder": "cypress/screenshots",
+  "env": {
+    "url1": "https://rahulshettyacademy.com/seleniumPractise/#/",
+    "url2": "https://www.rahulshettyacademy.com/AutomationPractice/",
+    "url3": "https://rahulshettyacademy.com/angularpractice/"
+  },
+  "projectId": "e76an3", 
+  "reporter": "mochawesome"
 }
