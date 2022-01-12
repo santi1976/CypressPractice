@@ -6,17 +6,29 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cyopen": "cypress open",
-    "cyrun": "cypress run"
+    "cyrun": "node_modules\\.bin\\cypress run",
+    "headed": "npm run cyrun -- -- headed",
+    "chrome": "cypress run -- -- browser chrome",
+    "firefox": "cypress run -- -- browser firefox",
+    "recordReportMochawesome": "npm run cyrun -- --record --key d1c807fa-b20c-442d-8120-213a6ab8372c --reporter mochawesome",
+    "recordDashboard": "npm run cyrun -- --record --key d1c807fa-b20c-442d-8120-213a6ab8372c",
+    "cucumber": "npm run cyrun -- --spec \"cypress\\integration\\Examples\\BDD\\ecommerce.feature\/", 
+    "cumcumberRecordDashboard": "npm run cyrun -- --record --key d1c807fa-b20c-442d-8120-213a6ab8372c --spec \"cypress\\integration\\Examples\\BDD\\ecommerce.feature\/"
+    
   },
   "author": "Santiago Riveira",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^8.5.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-iframe": "^1.0.1",
     "mocha": "^9.1.3",
     "mochawesome": "^7.0.1"
   },
   "dependencies": {
     "node-fetch": "^3.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }

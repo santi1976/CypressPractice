@@ -3,11 +3,21 @@
   "viewportHeight": 900,
   "defaultCommandTimeout": 6000,
   "screenshotsFolder": "cypress/screenshots",
+  "testFiles": "**/*.feature",
   "env": {
     "url1": "https://rahulshettyacademy.com/seleniumPractise/#/",
     "url2": "https://www.rahulshettyacademy.com/AutomationPractice/",
     "url3": "https://rahulshettyacademy.com/angularpractice/"
   },
+  
+
+  "retries": {
+
+    "runMode": 1,
+
+    "openMode": 1
+  },
   "projectId": "e76an3", 
   "reporter": "mochawesome"
+  
 }
