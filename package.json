@@ -12,9 +12,10 @@
     "firefox": "cypress run -- -- browser firefox",
     "recordReportMochawesome": "npm run cyrun -- --record --key d1c807fa-b20c-442d-8120-213a6ab8372c --reporter mochawesome",
     "recordDashboard": "npm run cyrun -- --record --key d1c807fa-b20c-442d-8120-213a6ab8372c",
-    "cucumber": "npm run cyrun -- --spec \"cypress\\integration\\Examples\\BDD\\ecommerce.feature\/", 
-    "cumcumberRecordDashboard": "npm run cyrun -- --record --key d1c807fa-b20c-442d-8120-213a6ab8372c --spec \"cypress\\integration\\Examples\\BDD\\ecommerce.feature\/"
-    
+    "cucumber": "npm run cyrun -- --spec \"cypress\\integration\\Examples\\BDD\\ecommerce.feature/",
+    "cumcumberRecordDashboard": "npm run cyrun -- --record --key d1c807fa-b20c-442d-8120-213a6ab8372c --spec \"cypress\\integration\\Examples\\BDD\\ecommerce.feature/",
+    "allFeatures": "npm run cyrun -- --spec \"cypress\\integration\\Examples\\BDD\\*.feature/",
+    "tag": "cypress run cypress-tags run -e TAGS=\"/"
   },
   "author": "Santiago Riveira",
   "license": "ISC",
@@ -23,12 +24,19 @@
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-iframe": "^1.0.1",
     "mocha": "^9.1.3",
-    "mochawesome": "^7.0.1"
+    "mochawesome": "^7.0.1",
+    "multiple-cucumber-html-reporter": "^1.18.3"
   },
   "dependencies": {
     "node-fetch": "^3.0.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
   }
 }
