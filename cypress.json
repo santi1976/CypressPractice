@@ -3,7 +3,7 @@
   "viewportHeight": 900,
   "defaultCommandTimeout": 6000,
   "screenshotsFolder": "cypress/screenshots",
-  "testFiles": "**/*.feature",
+  "testFiles": "**/*.*",
   "env": {
     "url1": "https://rahulshettyacademy.com/seleniumPractise/#/",
     "url2": "https://www.rahulshettyacademy.com/AutomationPractice/",
