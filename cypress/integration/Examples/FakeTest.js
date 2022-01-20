@@ -15,18 +15,28 @@ describe('My First Test Suite -', function(){
         
         {
             statusCode: 200,
-            body: [{
+            body: [
+                {
                 book_name: "Los Hermanos Mancuso",
                 isbn: "RSU",
                 aisle: "2301"
-            }]
+                }  
+            ]
         
         }).as('bookretrievals')
 
         cy.get("button[class='btn btn-primary']").click()
 
-        cy.wait('@bookretrievals') //waits for promise 'bookretrievals
+        cy.wait('@bookretrievals').should( function({request, response}){//waits for promise 'bookretrievals and Adding assertion of length of response array = rows of the table 
+            cy.get('tr').should('have.length', response.body.length+1)
+
+             
+            response.body.length
+        }) 
 
         cy.get('p').should('have.text', 'Oops only 1 Book available')
+
+
     })
+
 })
