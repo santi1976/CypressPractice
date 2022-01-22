@@ -8,7 +8,9 @@ describe('My First Test Suite', function() {
                             req.url="https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=malhotra"//we pass another value in AuthorName
                     
                             req.continue((res)=>{//continue permits the req goes to the server and collects the res in res
-                              //expect(res.statusCode).to.equal(403)
+                              //expect(res.statusCode).to.equal(200)
+                              
+                              
                             })
 
                     }).as("dummyUrl")
