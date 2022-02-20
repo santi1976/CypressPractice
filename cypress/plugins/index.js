@@ -31,3 +31,16 @@ module.exports = (on, config) => {
   
   on('file:preprocessor', cucumber())
 }
+
+const sqlServer = require('cypress-sql-server');
+const dbConfig = require('../../cypress.json')
+
+// eslint-disable-next-line no-unused-vars
+module.exports = (on, config) => {
+
+ tasks = sqlServer.loadDBPlugin(dbConfig.db);
+ 
+  
+ 
+ on('task', tasks);
+}

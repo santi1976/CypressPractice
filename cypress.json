@@ -18,6 +18,23 @@
     "openMode": 1
   },
   "projectId": "e76an3", 
-  "reporter": "mochawesome"
+  "reporter": "mochawesome",
+
+  "db": {
+    "userName": "cypress",
+    "password": "123",
+    "server": "localhost",
+    "port":"1433",
+    "database": "Cypress_DB",
+
+    
+    "options": {
+        "database": "Cypress_DB",
+        "encrypt": true,
+        "rowCollectionOnRequestCompletion" : true
+    }
+}
+
+  
   
 }
